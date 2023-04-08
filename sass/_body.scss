@@ -61,10 +61,106 @@ main {
         }
       }
     }
+
+    .addToBag {
+      display: flex;
+      margin-top: 1rem;
+      align-items: center;
+      button {
+        background-color: #000;
+        color: #fff;
+        padding: 0.3rem 2rem;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 
 .sizeSelector:hover {
   background: #000;
   color: #fff;
+}
+
+/*Mobile*/
+@media (max-width: 576px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .sneakerDisplay {
+      //   height: 50rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 90%;
+      }
+    }
+    .textSection {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+
+      .btn1 {
+        width: fit-content;
+        background-color: #000;
+        color: #fff;
+        font-size: 15px;
+        padding: 0.5rem 1.5rem;
+        border-radius: 30px;
+        margin-bottom: 0.5rem;
+      }
+      h1 {
+      }
+      .textParagraph {
+        width: 18.8rem;
+        font-size: 13.5px;
+        padding: 1rem 0;
+        color: #2c3034;
+        line-height: 1.5rem;
+      }
+      section {
+        width: 20rem;
+        display: flex;
+        justify-content: space-between;
+        .priceSection {
+          font-size: 16px;
+
+          .amount {
+            font-weight: bolder;
+            margin-top: 0.5rem;
+            font-size: 20px;
+          }
+        }
+        .sizeSection {
+          .size {
+            line-height: none;
+            font-size: 16px;
+          }
+          ul {
+            list-style-type: none;
+            display: flex;
+            margin-top: 1rem;
+            li {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .addToBag {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+        button {
+          background-color: #000;
+          color: #fff;
+          padding: 0.3rem 2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
 }
